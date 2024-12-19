@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanmay Talekar Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      h1 {
+        font-family: Arial, sans-serif;
+        font-size: 2rem;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        width: fit-content;
+        animation: blink-caret 0.7s step-end infinite;
+      }
+      .section-container {
+        padding: 100px 0; /* Adjust as needed */
+      }
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #333;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cursors -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Connect</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section-container">
+        <div class="three-background-container" id="three-container"></div>
+        <div class="content-wrapper hero-content">
+          <div class="hero-text">
+            <div class="name-title">
+              <span class="pre-title">Hello, I'm</span>
+              <h1 id="typing"></h1>
+            </div>
+            <div class="role-container">
+              <span class="role">Full Stack Developer</span>
+              <span class="location">Based in India</span>
+            </div>
+            <div class="scroll-indicator">
+              <span>Scroll to explore</span>
+              <div class="scroll-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section with Image and Skills -->
+      <section id="about" class="section-container">
+        <div class="three-background-container" id="about-three"></div>
+        <div class="content-wrapper">
+          <div class="about-grid">
+            <div class="about-text">
+              <span class="section-tag">About</span>
+              <h2 class="gradient-text">Creating Digital Experiences</h2>
+              <p class="about-description">
+                A full stack developer passionate about merging design and
+                technology. Specializing in interactive web experiences and
+                digital solutions.
+              </p>
+            </div>
+
+            <div class="card-container">
+              <div class="card">
+                <div class="image-container">
+                  <img
+                    src="WhatsApp_Image_2024-12-18_at_7.50.47_PM-removebg.png"
+                    alt="Profile Image"
+                  />
+                </div>
+                <div class="content">
+                  <h3>Tanmay Talekar</h3>
+                  <p>Full Stack Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-container">
+              <h3>Technical Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <span class="category-label">Full Stack Development</span>
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Tailwind</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">GSAP</span>
+                    <span class="skill-tag">Locomotive</span>
+                    <span class="skill-tag">Framer Motion</span>
+                    <span class="skill-tag">WebSockets</span>
+                    <span class="skill-tag">Multer</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <span class="category-label">Version Control</span>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="section-container">
+        <div class="three-background-container" id="projects-three"></div>
+        <div class="content-wrapper">
+          <span class="section-tag">Selected Work</span>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-content">
+                <span class="project-number">01</span>
+                <h3>MOVIE DISCOVERY WEBSITE</h3>
+                <p>Built a MovieDB API-based platform in React with Redux for managing state, focused on displaying trailers and detailed show information. The application allows users to explore movies and TV shows, view trailers, and access related recommendations, creating an engaging, interactive content discovery experience.</p>
+                <div class="project-meta">
+                  <span>Web Development</span>
+                  <span>2024</span>
+                </div>
+                <a href="https://tdb-box.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View Project <span class="link-arrow">→</span>
+                </a>
+              </div>
+              <div class="project-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/5988/5988394.png" alt="Movie Discovery Website" />
+              </div>
+            </article>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-content">
+                <span class="project-number">02</span>
+                <h3>OMEGLE CLONE</h3>
+                <p>Developed a web application that mimics the functionality of Omegle, enabling users to engage in video and text chat anonymously. The project focuses on privacy, ensuring user information remains hidden until both parties agree to share it</p>
+                <div class="project-meta">
+                  <span>Web Development</span>
+                  <span>2024</span>
+                </div>
+                <a href="https://omegle-ym2x.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View Project <span class="link-arrow">→</span>
+                </a>
+              </div>
+              <div class="project-image">
+                <img src="https://logos-world.net/wp-content/uploads/2022/10/Omegle-Emblem.png" alt="Movie Discovery Website" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section with Reduced Box Opacity -->
+      <section id="contact" class="section-container">
+        <div class="three-background-container" id="contact-three"></div>
+        <div class="content-wrapper">
+          <div class="contact-content">
+            <div class="contact-header">
+              <span class="section-tag">Let's Connect</span>
+              <h2 class="gradient-text">Start a Conversation</h2>
+              <p class="contact-subtitle">
+                Open for collaborations and interesting projects
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-card email-card">
+                <div class="card-content">
+                  <span class="contact-label">Email Me At</span>
+                  <a
+                    href="mailto:tanmaytalekar13@gmail.com"
+                    class="contact-link"
+                  >
+                    tanmaytalekar13@gmail.com
+                    <span class="link-arrow">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-card availability-card">
+                <div class="card-content">
+                  <span class="contact-label">Availability</span>
+                  <p class="availability-status">
+                    <span class="status-dot"></span>
+                    Available for Work
+                  </p>
+                </div>
+              </div>
+
+              <div class="social-card">
+                <div class="card-content">
+                  <span class="contact-label">Social Profiles</span>
+                  <div class="social-links">
+                    <a
+                      href="https://www.linkedin.com/in/tanmay-talekar-02214926b"
+                      target="_blank"
+                      class="social-link"
+                    >
+                      <span class="platform">LinkedIn</span>
+                      <span class="link-arrow">→</span>
+                    </a>
+                    <a
+                      href="https://github.com/tanmaytalekar13"
+                      target="_blank"
+                      class="social-link"
+                    >
+                      <span class="platform">GitHub</span>
+                      <span class="link-arrow">→</span>
+                    </a>
+                    <a
+                      href="https://twitter.com/TanmayTalekar12"
+                      target="_blank"
+                      class="social-link"
+                    >
+                      <span class="platform">Twitter</span>
+                      <span class="link-arrow">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="location-card">
+                <div class="card-content">
+                  <span class="contact-label">Based in</span>
+                  <p class="location-text">India</p>
+                  <span class="timezone">IST (GMT+5:30)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Mobile menu functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
+
+        function toggleMenu() {
+          mobileMenuBtn.classList.toggle('active');
+          navLinks.classList.toggle('active');
+          body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
+        }
+
+        // Handle navigation links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the target section
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+              // Close mobile menu if open
+              if (navLinks.classList.contains('active')) {
+                toggleMenu();
+              }
+
+              // Calculate position
+              const navHeight = document.querySelector('.navbar').offsetHeight;
+              const targetPosition = targetSection.offsetTop - navHeight;
+
+              // Smooth scroll with faster animation
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+
+        // Mobile menu toggle
+        if (mobileMenuBtn && navLinks) {
+          mobileMenuBtn.addEventListener('click', toggleMenu);
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+          if (navLinks.classList.contains('active') && 
+              !navLinks.contains(e.target) && 
+              !mobileMenuBtn.contains(e.target)) {
+            toggleMenu();
+          }
+        });
+      });
+    </script>
+    <script>
+      const text = "Tanmay Talekar";
+      const typingElement = document.getElementById("typing");
+      let index = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+        if (isDeleting) {
+          typingElement.textContent = text.substring(0, index--);
+        } else {
+          typingElement.textContent = text.substring(0, index++);
+        }
+
+        if (!isDeleting && index === text.length) {
+          setTimeout(() => (isDeleting = true), 1000); // Wait before deleting
+        } else if (isDeleting && index === 0) {
+          isDeleting = false;
+        }
+
+        const speed = isDeleting ? 100 : 150;
+        setTimeout(typeEffect, speed);
+      }
+
+      typeEffect();
+    </script>
+    <script>
+      // Theme toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const sunIcon = document.querySelector('.sun-icon');
+      const moonIcon = document.querySelector('.moon-icon');
+
+      // Check for saved theme preference, otherwise use system preference
+      const getPreferredTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          return savedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Set theme
+      const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Update icons
+        if (theme === 'dark') {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        } else {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        }
+      };
+
+      // Initialize theme
+      setTheme(getPreferredTheme());
+
+      // Toggle theme on button click
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
+
+      // Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        setTheme(e.matches ? 'dark' : 'light');
+      });
+    </script>
+  </body>
+</html>
